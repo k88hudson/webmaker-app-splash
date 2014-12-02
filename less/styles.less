@@ -66,9 +66,52 @@ p {
 }
 
 .splash-phone {
+    position: relative;
     width: 150px;
+    display: inline-block;
     @media (min-width: @breakpoint-med) {
         width: 100%;
+    }
+    .phone {
+        width: 100%;
+    }
+    .tiles > img {
+        width: 30%;
+        position: absolute;
+        .animated;
+        .bounceIn;
+        @delayBase: 1s;
+        @delayIncrement: 0.1s;
+        &:nth-child(1) {
+            top: 22%;
+            left: 13%;
+            animation-delay: @delayBase;
+        }
+        &:nth-child(2) {
+            top: 22%;
+            right: 13%;
+            animation-delay: (@delayBase + (@delayIncrement * 2))
+        }
+        &:nth-child(3) {
+            top: 44.5%;
+            left: 13%;
+            animation-delay: (@delayBase + (@delayIncrement * 4))
+        }
+        &:nth-child(4) {
+            top: 44.5%;
+            right: 13%;
+            animation-delay: (@delayBase + (@delayIncrement * 5));
+        }
+        &:nth-child(5) {
+            top: 67%;
+            left: 13%;
+            animation-delay: (@delayBase + (@delayIncrement * 3));
+        }
+        &:nth-child(6) {
+            top: 67%;
+            right: 13%;
+            animation-delay: (@delayBase + (@delayIncrement * 1));
+        }
     }
 }
 
