@@ -20,7 +20,7 @@ html, body {
 
 body {
     background-color: @turquoise;
-    background-image: url(/images/background.gif);
+    background-image: url(./images/background.gif);
     background-size: 400px;
     background-position: 0px -20px;
     color: @white;
@@ -47,12 +47,23 @@ h1 {
     @media (min-width: @breakpoint-med) {
         font-size: 2em;
     }
-    @media (min-width: 960px) {
+    @media (min-width: @breakpoint-lg) {
         font-size: 2.5em;
     }
     font-weight: normal;
     line-height: 1.2;
-    margin: 0;
+    margin: 0 0 20px 0;
+    &.title-mobile {
+        @media (min-width: @breakpoint-med) {
+            display: none;
+        }
+    }
+    &.title-desktop {
+        display: none;
+        @media (min-width: @breakpoint-med) {
+            display: block;
+        }
+    }
 }
 
 p {
@@ -63,6 +74,10 @@ p {
         font-weight: normal;
         color: @white;
     }
+}
+
+.no-break {
+    white-space: nowrap;
 }
 
 .splash-phone {

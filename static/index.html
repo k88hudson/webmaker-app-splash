@@ -6,35 +6,38 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
         <title>Webmaker</title>
-        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="./styles/styles.css">
     </head>
 
     <body id="splash">
         <div class="row animated fadeIn">
             <div class="left">
+                <h1 class="title-mobile">Make &amp; share <span class="no-break">the web</span></h1>
                 <div class="splash-phone">
-                    <img class="phone" src="/images/phone-blank.svg" alt="mobile appmaker">
+                    <img class="phone" src="./images/phone-blank.svg" alt="mobile appmaker">
                     <div class="tiles">
-                        <img src="/images/tile-0.svg" alt="blank app">
-                        <img src="/images/tile-1.svg" alt="blank app">
-                        <img src="/images/tile-2.svg" alt="blank app">
-                        <img src="/images/tile-3.svg" alt="blank app">
-                        <img src="/images/tile-4.svg" alt="blank app">
-                        <img src="/images/tile-5.svg" alt="blank app">
+                        <img src="./images/tile-0.svg" alt="blank app">
+                        <img src="./images/tile-1.svg" alt="blank app">
+                        <img src="./images/tile-2.svg" alt="blank app">
+                        <img src="./images/tile-3.svg" alt="blank app">
+                        <img src="./images/tile-4.svg" alt="blank app">
+                        <img src="./images/tile-5.svg" alt="blank app">
                     </div>
                     
                 </div>
                 
             </div>
             <div class="right">
-                <h1>Make &amp; share the web</h1>
+                <h1 class="title-desktop">Make &amp; share <span class="no-break">the web</span></h1>
                 <p>Webmaker.app is being developed by <strong>Mozilla</strong>. We're exploring how to radically lower the barrier to entry for creating and distributing mobile applications through <strong>on-device authoring</strong>.</p>
                 <p>
-                    <button class="btn">Install</button>
+                    <button id="install-app" class="btn">Install</button>
+                    <a href="https://webmaker-app.mofostaging.net/sign-in" id="try-app" class="btn">Try</a>
                     <a href="http://webmaker-mobile-guide.mofodev.net" class="btn link">Docs</a>
                     <a href="https://github.com/mozillafordevelopment/webmaker-app" class="btn link"><span class="fa fa-github"></span> Github</a>
                 </p>
             </div>
         </div>
+        <script src="./js/index.js"></script>
     </body>
 </html>
